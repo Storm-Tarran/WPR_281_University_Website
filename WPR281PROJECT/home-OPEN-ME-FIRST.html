@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belgium Campus</title>
+    <link rel="stylesheet" href="home.css"> <!-- CSS link to home -->
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar"> <!-- Navbar -->
+            <div class="icon">
+                <h2 class="logo">Belgium Campus</h2> <!-- Logo -->
+            </div>
+
+            <div class="menu"> <!-- Menu items linking to home, About, Careers, and Contact page -->
+                <ul>
+                    <li><a href="home-OPEN-ME-FIRST.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">CAREERS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="content"> <!-- Main content of introduction -->
+            <!-- PLEASE NOTE: I used this information as using direct BC information is copyright -->
+            <h1>Belgium Campus <br><span>#1 I.T University</span> <br>In South Africa</h1>
+            <p class="par">Belgium Campus is a university in South Africa that helps to raise 
+                <br>the bar in education through its graduates in the ICT industry. <br>The world is looking to technology for solutions 
+                to some of the most <br> fundamental issues and problems faced today. With the help of one <br> of our revolutionary IT qualifications 
+                you can lead the way in providing <br> these solutions. A university is an institution of higher education and <br> research which awards academic
+                degrees in several academic disciplines. <br> University is derived from the Latin phrase universitas magistrorum <br> et scholarium, which roughly 
+                means "community of teachers and scholars".
+            </p>
+
+            <div class="search-container">  <!-- Container for the search section -->
+                <div class="search"> <!-- Container for the search input and button -->
+                    <input id="srch" type="search" placeholder="Search for a Course" list="search-suggestions" autocomplete="off"/>
+                    <a href="#"><button id="searchBtn" class="btn">Search</button></a> <!-- Search button -->
+                </div> 
+                <datalist id="search-suggestions"> <!-- Datalist for providing search suggestions -->
+                    <option value="Higher Certificate">
+                    <option value="Diploma in Technology">
+                    <option value="Bachelor in Technology">
+                    <option value="Bachelor of Computing">
+                </datalist>
+                <div id="courseDetails"></div> <!-- Container for displaying basic results -->
+                <div id="detailsBox"></div> <!-- Container for displaying detailed information of a selected course -->
+            </div>
+
+            <div class="headWrap">
+                <div class="slideshow"> <!-- Slideshow -->
+                    <img class="img" src="image1.jpg" alt="Image 1">
+                    <img class="img" src="download.jfif" alt="Download">
+                    <img class="img" src="image3.jfif" alt="Image 3">
+                    <img class="img" src="image4.jpeg" alt="Image 4">
+                    <img class="img" src="download2.jfif" alt="Download 2">
+                    <img class="img" src="image2.jfif" alt="Image 2">
+                    <img class="img" src="image3.jfif" alt="Image 3">
+                    <img class="img" src="image4.jpeg" alt="Image 4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JAVASCRIPT-HOME.js"></script> <!-- External JavaScript file for handling search functionality and slideshow -->
+</body>
+</html>

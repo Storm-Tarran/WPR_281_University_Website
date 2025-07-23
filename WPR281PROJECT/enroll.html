@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="enroll.css"> <!-- CSS link to enroll -->
+</head>
+<body>
+    <style>
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    </style>
+    <div class="wrapper"> <!-- Wrapper for the entire enrollment section -->
+        <h1>LET'S GET YOU ENROLLED!</h1> <!-- Heading for the enrollment section -->
+        
+                <!-- Course selection dropdown -->
+                <label for="courseTitle" class="visually-hidden">Select Course</label>
+                <select id="courseTitle" required>
+                    <option value="" hidden>Reselect your course</option>
+                    <option value="Higher Certificate">Higher Certificate</option>
+                    <option value="Diploma in Technology">Diploma in Technology</option>
+                    <option value="Bachelor in Technology">Bachelor in Technology</option>
+                    <option value="Bachelor of Computing">Bachelor of Computing</option>
+                </select>
+                    <input type="date" id="birth" placeholder="dd/mm/yyyy" required>
+
+                    <input type="text" id="phone" placeholder="Enter Phone Number Here" autocomplete="off" required>
+
+                <!-- Course selection dropdown -->
+                <select id="courseTitle" required>
+                    <option value="" hidden>Reselect your course</option>
+                    <option value="Higher Certificate">Higher Certificate</option>
+                    <option value="Diploma in Technology">Diploma in Technology</option>
+                    <option value="Bachelor in Technology">Bachelor in Technology</option>
+                    <option value="Bachelor of Computing">Bachelor of Computing</option>
+                </select>
+             
+                 <!-- Referral source dropdown -->
+                <label for="referral" class="visually-hidden">How did you hear about us?</label>
+                <select id="referral" required>
+                    <option hidden>How did you hear about us?</option>
+                    <option>Friend or family member</option>
+                    <option>School guidance counselor</option>
+                    <option>Facebook/ Instagram/ Twitter</option>
+                    <option>Radio/ Sign Board</option>
+                    <option>Don't remember</option>
+                </select>
+                
+                <!-- Helper details section -->
+                <div class="helper-details">
+                    <div class="helper-header">Personal Information</div>
+                    <br>
+                    <p class="helper-text">Let's get rolling! Please fill out the information above.</p>
+                    <br>
+                    <img src="giphy.webp" alt="graduation-gif">
+                </div>
+                
+                <button type="submit" class="btnn">Enroll</button> <!-- Enroll button -->
+            </div>
+        </form>
+        
+        <div class="container" id="thankYouContainer" style="display: none;"> <!-- Thank you message container (hidden by default) -->
+            <h1 id="thankYouMessage"></h1>
+            <p id="countdown-timer"></p>
+        </div>
+
+        <!-- Link to external JavaScript file for handling form submission and other logic -->
+        <script src="JAVASCRIPT-ENROLL.js"></script>
+    </div>
+    </body>
+    </html>

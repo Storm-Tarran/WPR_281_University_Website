@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 75px;
+    margin: auto;
+    padding: 0 10px;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    text-decoration: none;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    float: right;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  ul li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+  }
+  
+  ul li a:hover {
+    color: #ff7200;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 auto; 
+    margin-top: 10vh;
+    background-color: #fff;
+    color: #fff;
+    width: 90vw; 
+    max-width: 55vw; 
+    height: auto; 
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.8) 50%);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 1.25rem 1.25rem 3.75rem #cccccc, -1.25rem -1.25rem 3.75rem #ffffff;
+  }
+  
+  /* Styling the placeholder text */
+  ::placeholder {
+    color: #fff;
+    font-family: Arial;
+  }
+  
+  /* Styling for the title */
+  #title {
+    color: #ff7200;
+    font-size: 25px;
+    text-align: center; 
+  }
+  
+  /* Styling for the contact details section */
+  .contact-details h2 {
+    width: auto; 
+    max-width: 20vw; 
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: -9.5rem; 
+  }
+  
+  /* Styling for input fields in the contact form */
+  .contact-form input {
+    width: 100%; 
+    max-width: 15vw; 
+    height: 3.5vh;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    font-family: sans-serif;
+  }
+  
+  /* Styling for textarea fields */
+  textarea {
+    width: 100%; 
+    max-width: 20vw; 
+    height: 10vh;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    font-family: sans-serif;
+  }
+  
+  /* Margin adjustments for specific input fields */
+  #name, #email, #number, #reason {
+    margin-right: 3em;
+    margin-bottom: 1em;
+  }
+  
+  /* Styling for the contact details and contact form sections */
+  .contact-details, .contact-form {
+    width: 100%; 
+    max-width: 45%; 
+    padding-right: 2rem;
+  }
+  
+  /* Styling for the submit button */
+  button {
+    border: none;
+    outline: none;
+    background-color: #ff7200;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #fd9f51;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  
+  /* Styling for the button when active */
+  button:active {
+    transform: translateY(10px);
+    box-shadow: 0px 0px 0px 0px #fccda7;
+  }
+  
+  /* Responsive adjustments for screens smaller than 800px */
+  @media (max-width: 800px) {
+    .container {
+      flex-direction: column; 
+      width: 90vw; 
+      margin-left: 0; 
+    }
+  
+    .contact-details, .contact-form {
+      width: 100%; 
+      margin-bottom: 2rem; 
+    }
+  
+    .contact-form input, textarea {
+      margin-left: 0; 
+    }
+  
+    button {
+      width: 100%; 
+      margin-left: 0; 
+    }
+  }
+  
+  /* Responsive adjustments for screens smaller than 600px */
+  @media (max-width: 600px) {
+    .container {
+      width: 95vw; 
+    }
+  
+    .contact-details h2 {
+      width: 100%; 
+    }
+  
+    .contact-form input, textarea {
+      width: 100%; 
+      margin-left: 0; 
+    }
+  
+    button {
+      width: 100%; 
+      margin-left: 0; 
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

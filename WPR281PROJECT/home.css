@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent overflow */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Main Container */
+.main {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  height: 75px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+/* Container for icon elements */
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+/* Container for icon elements */
+.logo {
+  color: #ff7200;
+  font-size: 35px;
+  font-family: Arial;
+  text-decoration: none;
+}
+
+/* Container for menu items */
+.menu {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+/* Styling for unordered lists */
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* Styling for list items */
+ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+/* Styling for links inside list items */
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+/* Styling for links on hover */
+ul li a:hover {
+  color: #ff7200;
+}
+
+/* Search Bar */
+.search-container {
+  width: 100%;
+  position: absolute;
+  top: 120px; 
+  left: 22.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container for the search input and button */
+.search {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Styling for the search input field */
+#srch {
+  font-family: 'Times New Roman';
+  width: 300px;
+  height: 42px;
+  background: transparent;
+  border: 1px solid #ff7200;
+  color: #fff;
+  border-right: none;
+  font-size: 16px;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+/* Styling for the search button */
+button.btn {
+  padding: 10px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #ff7200;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+/* Styling for the button on hover and focus */
+button.btn:hover,
+button.btn:focus {
+  color: black;
+  background: #ff7200;
+  border: 1px solid #ff7200;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #ff7200, 0 0 20px #ff7200, 0 0 50px #ff7200, 0 0 100px #ff7200;
+}
+
+
+/* Styling for the button when it is active (pressed) */
+button.btn:active {
+  letter-spacing: 3px;
+  background-color: #ff7200;
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 100ms;
+}
+
+
+/* Remove outline from the search input when focused */
+#srch:focus {
+  outline: none;
+}
+
+/* Hide list and calendar picker indicators in the search field */
+.search [list]::-webkit-list-button,
+.search [list]::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+/* Content */
+.content {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  color: #fff;
+  margin-top: -10px;
+}
+
+/* Styling for paragraphs within the .content class */
+.content .par {
+  padding: 20px 0;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+
+/* Styling for h1 headings within the .content class */
+.content h1 {
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  margin-top: 9%;
+  letter-spacing: 2px;
+  padding-left: 20px;
+}
+
+/* Styling for span elements within the .content class */
+.content span {
+  color: #ff7200;
+  font-size: 65px;
+}
+
+/* Slideshow */
+.headWrap {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+/* Container for the slideshow with automatic scrolling effect */
+.slideshow {
+  width: 300%;
+  overflow: auto;
+  -webkit-animation: slide-show 45s linear infinite;
+  -moz-animation: slide-show 45s linear infinite;
+  animation: slide-show 45s linear infinite;
+}
+
+/* Styling for images inside the slideshow */
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+/* Specific styling for images within the slideshow */
+.slideshow img {
+  width: 11.11%;
+  float: left;
+  border: solid .5px;
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slide-show {
+  100% {
+    transform: translateX(-66.66%);
+  }
+}
+
+/* Placeholder Styling */
+::placeholder {
+  color: #fff;
+  font-family: Arial;
+}
+
+/* Details Boxes */
+#courseDetails,
+#detailsBox {
+  border-radius: 1rem;
+  background: transparent;
+  box-shadow: 1.25rem 1.25rem 3.75rem #ffcfa7, -1.25rem -1.25rem 3.75rem #ffcfa7;
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff;
+  width: 30%;
+  max-width: 800px;
+}
+
+/* Styling for buttons within #courseDetails and #detailsBox */
+#courseDetails button,
+#detailsBox button {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffcfa7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 25px;
+  transition: .3s;
+  margin-bottom: 1rem;
+}
+
+/* Styling for buttons on hover within #courseDetails and #detailsBox */
+#courseDetails button:hover,
+#detailsBox button:hover {
+  background-color: #ff7200;
+  box-shadow: 0 0 0 5px #f0ac75;
+  color: #fff;
+}
+
+/* Responsive adjustments for screens smaller than 1200px */
+@media (max-width: 1200px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search {
+    width: 100%;
+    left: 0;
+    transform: translate(0, 0);
+    margin-left: 0;
+    position: relative;
+    top: 0;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* Responsive adjustments for screens smaller than 768px */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 28px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+
+  .content span {
+    font-size: 50px;
+  }
+
+  #courseDetails,
+  #detailsBox {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .search {
+    width: 100%;
+    margin-right: 0;
+    flex-direction: column;
+  }
+}
+
+/* Responsive adjustments for screens smaller than 480px */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .content span {
+    font-size: 40px;
+  }
+
+  #courseDetails,
+  #detailsBox {
+    margin-top: 1rem;
+    margin-right: 0;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  height: 75px;
+  margin: auto;
+  padding: 0 10px;
+}
+  
+.icon {
+  display: flex;
+  align-items: center;
+}
+  
+.logo {
+  color: #ff7200;
+  font-size: 35px;
+  font-family: Arial;
+  text-decoration: none;
+}
+  
+.menu {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+  
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+  
+ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+  
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+  
+ul li a:hover {
+  color: #ff7200;
+}
+
+/* Main container styling */
+.main{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-left: -120px;
+}
+
+/* Styling for h1 inside .history1 */
+.history1 h1{
+  font-family: 'Open Sans Condensed';
+	color:  #ff7200;
+	font-size:45px;
+	text-transform:uppercase;
+  padding-bottom: 1rem;
+  margin-top: 20vh;
+  margin-left: 10vw;
+}
+
+/* Styling for p inside .history1 */
+.history1 p{
+  font-family: 'Open Sans Condensed';
+	color:#ffffff;
+  padding-bottom: 1rem;
+  margin-left: 10vw;
+  font-size: 25px;
+}
+
+/* Styling for images inside .aside1 */
+.aside1 img{
+  margin-left: 20px;
+  width: 30vw;
+  height: 40vh;
+  margin-top: 8rem;
+}

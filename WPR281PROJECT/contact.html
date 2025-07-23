@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css"> <!-- CSS link for contacts -->
+</head>
+<body>
+
+    <div class="navbar"> <!-- Navbar -->
+        <div class="icon">
+            <h2 class="logo">Belgium Campus</h2> <!-- Logo -->
+        </div>
+
+        <div class="menu"> <!-- Menu items linking to home, About, Careers, and Contact page -->
+            <ul>
+                <li><a href="home-OPEN-ME-FIRST.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">CAREERS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </div> 
+
+    <div class="container"> <!-- Container to house the contact details -->
+        <div class="contact-details"><!-- Container for info on BC -->
+            <h2>Contact Details</h2>
+            <br>
+            <p><strong id="title">Operating Hours</strong> <br> <br> Monday - Friday: 8:00 - 17:00 | Saturday - Sunday: Closed</p>
+            <p><strong id="title">Address:</strong> <br> <br> 45b Short Street, Kempton Park CBD, 1619</p>
+            <p><strong id="title">Phone:</strong> <br> <br> 010 593 5348</p>
+            <p><strong id="title">Email:</strong> <br> <br> BelgiumCampus@Receptionist.ac.za</p>
+        </div>
+        <div class="contact-form"> <!-- Contact form input for the user to contact BC -->
+            <h2>Please Fill In The Form <br> We'll Get Back To You!</h2>
+            <form>
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+                <label for="phone"></label>
+                <input type= "tel" id="number" name="number" placeholder="Phone Number" required>
+
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="reason"></label>
+                <input type="text" id="reason" name="reason" placeholder="Subject for Message" required>
+
+                <label for="message"></label>
+                <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+
+                <button type="submit">Submit</button> <!-- Submit form button -->
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

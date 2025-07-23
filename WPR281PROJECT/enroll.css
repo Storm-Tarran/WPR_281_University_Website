@@ -1,0 +1,202 @@
+/* Setting global styles for body and html elements */
+body, html {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+}
+
+/* Wrapper for centering content in a column */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Style for h1 elements */
+h1 {
+  font-family: 'Exo', sans-serif;
+  color: #ffffff;
+  font-size: 45px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Placeholder text style */
+::placeholder {
+  color: #fff;
+  font-family: Arial;
+}
+
+/* Form container styling */
+.form {
+  width: 100%;
+  max-width: 55vw;
+  height: auto;
+  background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 1.25rem 1.25rem 3.75rem #cccccc, -1.25rem -1.25rem 3.75rem #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form heading styling */
+.form h2 {
+  font-family: sans-serif;
+  text-align: center;
+  color: #ff7200;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Input and select elements inside the form */
+.form input, .form select {
+  width: 100%;
+  height: 3.5vh;
+  background: transparent;
+  border-bottom: 1px solid #ff7200;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  font-family: sans-serif;
+}
+
+/* Options inside the select element */
+.form select option {
+  background: rgba(0,0,0,0.8)50%;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+
+
+/* Remove outline on input focus */
+.form input:focus {
+  outline: none;
+}
+
+/* Helper details section */
+.helper-details {
+  height: auto;
+  width: 100%;
+  color: white;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Helper header styling */
+.helper-header {
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Helper text styling */
+.helper-text {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 0.5rem;
+}
+
+/* Image styling */
+img {
+  width: 100%;
+  max-width: 14vw;
+  height: auto;
+}
+
+/* Button styling */
+.btnn {
+  --primary: #fda861;
+  --secondary: #ff9239;
+  --tertiary: #ff7200;
+  cursor: pointer;
+  width: 15rem;
+  height: 2.5rem;
+  font-size: 1.125em;
+  letter-spacing: 0.125rem;
+  color: #fff;
+  background: var(--primary);
+  border: 0.125rem solid var(--secondary);
+  border-radius: .75rem;
+  box-shadow: 0 8px 0 var(--secondary);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px var(--tertiary));
+  margin-top: 2rem;
+  align-self: center;
+}
+
+/* Button active state styling */
+.btnn:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 var(--tertiary);
+}
+
+/* Thank you container and message styling */
+#thankYouContainer, #thankYouMessage, #countdown-timer {
+  color: #ff7200;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+/* Media query for screens up to 600px wide */
+@media screen and (max-width: 600px) {
+  .form {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .form h2 {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .form input, .form select {
+    margin-left: 0;
+  }
+
+  .helper-details {
+    border-left: none;
+    border-top: 0.5px solid #ff7200;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .btnn {
+    width: 100%;
+    max-width: 15rem;
+  }
+}
+
+/* Media query for screens up to 800px wide */
+@media (max-width: 800px) {
+  .form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form input, .form select {
+    width: 100%;
+    margin-left: 0;
+  }
+}
